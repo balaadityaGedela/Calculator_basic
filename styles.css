@@ -1,0 +1,172 @@
+body
+{
+  position: relative;
+  margin: 0;
+}
+
+.top-container{
+  position: sticky;
+  top:1px;
+  height: 50px;
+  display:flex;
+  background-color: red;
+  z-index: 1;
+}
+
+.dropdown
+{
+  display: flex;
+  position: sticky;
+  top:50px;
+  z-index: 1;
+}
+
+.dd1,.dd2,.dd3,.dd4
+{
+  height: 150px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dd1
+{
+  width: 16.6%;
+}
+.dd2
+{
+  margin-left: 16.6%;
+  width: 50%;
+}
+.dd3
+{
+  margin-left: 66.6%;
+  width: 16.7%;
+}
+.dd4
+{
+  margin-left: 83.3%;
+  width: 16.7%;
+}
+
+a
+{
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  background-color: powderblue;
+}
+
+.tile1
+{
+  background-color: green;
+  width: 16.6%;
+}
+.tile2
+{
+  background-color: brown;
+  width: 50%;
+}
+.tile3
+{
+  background-color: pink;
+  width: 16.7%;
+}
+.tile4
+{
+  background-color: violet;
+  width: 16.7%;
+}
+
+.container
+{
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container1
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.container10
+{
+  margin: 10px;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #DF826C;
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.container11
+{
+  margin: 20px;
+  padding: 20px;
+  background-color: seagreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height:400px;
+  width:300px;
+  grid-gap: 10px;
+  border-radius: 20px;
+}
+
+.num,.result,.clear
+{
+    border-radius: 10px;
+    /* just make tht box flex and thn add justify and laign itmes to make the  text center
+    text-align is also good, but height wont b centered, check below*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    font-size: 30px;
+    user-select: none;
+}
+
+.text
+{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.num,.operation,.top-container,.result,.clear:hover
+{
+  cursor: pointer;
+}
+
+.container2, .container3
+{
+  border-radius: 20px;
+  margin: 20px;
+  height: 200px;
+  width:300px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.operation
+{
+  margin: 10px;
+  height: 40%;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
